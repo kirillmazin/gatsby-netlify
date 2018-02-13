@@ -9,8 +9,14 @@ collections:
     label: Blog
     folder: blog
     create: true
+    extenstion: JSON
     format: JSON
-    extension: JSON
+    fields:
+      - { name: project_name, label: Project Name }
+      - { name: date, label: Date, widget: date }
+      - { name: title, label: Title }
+      - { name: project_title, label: Project Title }
+      - { name: hero_image, label: Hero image, widget: "image"}
   - name: case-study
     label: Case Study
     folder: case-study
