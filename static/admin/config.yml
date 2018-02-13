@@ -9,8 +9,8 @@ collections:
     label: Blog
     folder: blog
     create: true
-    extenstion: JSON
-    format: JSON
+    extenstion: json
+    format: json
     fields:
       - { name: project_name, label: Project Name }
       - { name: date, label: Date, widget: date }
@@ -23,8 +23,8 @@ collections:
     create: true
     delete: true
     slug: "{{slug}}"
-    extenstion: JSON
-    format: JSON
+    extenstion: json
+    format: json
     fields:
       - { name: project_name, label: Project Name }
       - { name: date, label: Date, widget: date }
