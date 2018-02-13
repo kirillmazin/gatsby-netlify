@@ -10,7 +10,6 @@ collections:
     folder: blog
     create: true
     extenstion: json
-    format: json
     fields:
       - { name: project_name, label: Project Name }
       - { name: date, label: Date, widget: date }
