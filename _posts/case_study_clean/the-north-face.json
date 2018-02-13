@@ -1,0 +1,14 @@
+{
+  "title": "The North Face",
+  "date": "2018-02-13T22:03:20.356Z",
+  "subtitle": "The North Face Blah Blah",
+  "services": "Packaging",
+  "category": "Design",
+  "case_study_image_grid": [
+    {
+      "image_alt": "afasdfs",
+      "image": "/static/assets/animation_test.gif",
+      "image_aspect_ratio": "1.5"
+    }
+  ]
+}
