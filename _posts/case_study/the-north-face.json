@@ -1,0 +1,14 @@
+{
+  "title": "The North Face",
+  "date": "2018-02-13T22:25:22.809Z",
+  "subtitle": "The North Face Blah Blah",
+  "services": "Design",
+  "category": "Packging",
+  "case_study_image_grid": [
+    {
+      "image_alt": "Running",
+      "image": "/static/assets/folk arts - arts council sfl photo by chris walters 10.jpg",
+      "image_aspect_ratio": "1.5"
+    }
+  ]
+}
