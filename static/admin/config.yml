@@ -9,7 +9,8 @@ collections:
     label: Blog
     folder: blog
     create: true
-
+    format: JSON
+    extension: JSON
   - name: case-study
     label: Case Study
     folder: case-study
@@ -17,6 +18,7 @@ collections:
     delete: true
     slug: "{{slug}}"
     extenstion: JSON
+
     fields:
       - { name: project_name, label: Project Name }
       - { name: date, label: Date, widget: date }
