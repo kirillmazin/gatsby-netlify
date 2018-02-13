@@ -18,7 +18,7 @@ collections:
     delete: true
     slug: "{{slug}}"
     extenstion: JSON
-
+    format: JSON
     fields:
       - { name: project_name, label: Project Name }
       - { name: date, label: Date, widget: date }
