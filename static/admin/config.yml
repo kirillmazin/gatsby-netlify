@@ -16,7 +16,7 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
   - label: "Case study"
     name: "case_study"
-    folder: "_posts/case_study"
+    folder: "case_study"
     create: true
     fields:
       - {label: "Case study name", name: "case_study_index", widget: "string"}
@@ -30,7 +30,7 @@ collections:
       - {label: "Service", name: "service", widget: "string"}
   - label: "Case study list"
     name: "case_study_list"
-    folder: "_posts/case_study_list"
+    folder: "case_study_list"
     create: true
     fields:
       - {label: "Case study item", name: "case_study_item", widget: "relation", collection: "case_study", searchFields:["name"],valueField:"name"}
