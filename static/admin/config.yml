@@ -5,40 +5,32 @@ backend:
 media_folder: static/assets
 
 collections:
-  - name: blog
-    label: Blog
-    folder: blog
+  - label: "Blog"
+    name: "blog"
+    folder: "_posts/blog"
     create: true
-    extenstion: json
     fields:
-      - { name: project_name, label: Project Name }
-      - { name: date, label: Date, widget: date }
-      - { name: title, label: Title }
-      - { name: project_title, label: Project Title }
-      - { name: hero_image, label: Hero image, widget: "image"}
-  - name: case-study
-    label: Case Study
-    folder: case-study
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - label: "Case study"
+    name: "case_study"
+    folder: "_posts/case_study"
     create: true
-    delete: true
-    slug: "{{slug}}"
-    extenstion: json
-    format: json
     fields:
-      - { name: project_name, label: Project Name }
-      - { name: date, label: Date, widget: date }
-      - { name: title, label: Title }
-      - { name: project_title, label: Project Title }
-      - { name: hero_image, label: Hero image, widget: "image"}
-
-      - label: "Testimonials"
-        name: "testimonials"
+      - {label: "Case study name", name: "case_study_index", widget: "string"}
+      - {label: "Category", name: "category", widget: "string"}
+      - label: "Image grid"
+        name: "case_study_image_grid"
         widget: "list"
         fields:
-          - {label: Quote, name: quote, widget: string, default: "Everything is awesome!"}
-          - label: Author
-            name: author
-            widget: object
-            fields:
-              - {label: Name, name: name, widget: string, default: "Emmet"}
-              - {label: Avatar, name: avatar, widget: image}
+            - {label: "Image alt", name: "image_alt", widget: "string"}
+            - {label: "Image", name: "image", widget: "image"}
+      - {label: "Service", name: "service", widget: "string"}
+  - label: "Case study list"
+    name: "case_study_list"
+    folder: "_posts/case_study_list"
+    create: true
+    fields:
+      - {label: "Case study item", name: "case_study_item", widget: "relation", collection: "case_study", searchFields:["name"],valueField:"name"}
