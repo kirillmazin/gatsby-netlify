@@ -1,0 +1,52 @@
+{
+  "title": "Yerba Buena",
+  "Header": "Yerba Buena Community Benefit District",
+  "hero_image": "/static/assets/yerba-buena-hero-03.jpg",
+  "subtitle": "Defining a Sense of Place",
+  "paragraph": [
+    {
+      "name": "intro",
+      "description": "When an area has a rich history, past and present don’t always reconcile. Yerba Buena is an historic neighborhood in the heart of downtown San Francisco that had lost its identity. Working closely with the Yerba Buena Community Benefit District (YBCBD), we defined the brand strategy and experience that allowed Yerba Buena to embrace its heritage and define its future."
+    },
+    {
+      "name": "in_a_name",
+      "description": "What’s in a name? In the case of a neighborhood, everything. If people can’t agree on what to call it, no one knows when they’re in it. The first step in our process was to ask around. We set about knocking on doors and pounding the pavement to engage a broad range of residents, business owners and visitors."
+    },
+    {
+      "name": "between",
+      "description": "Between one-on-one conversations, neighborhood charrettes, online surveys, and man-on-the-street interviews, we connected with over 350 businesses, 200 residents and 100 visitors."
+    },
+    {
+      "name": "incredible_depth",
+      "description": "This incredible depth of research was distributed as a living document to strategically ground the future of the Yerba Buena brand. And one of the many insights it revealed was that the name Yerba Buena still resonated – but the neighborhood needed a new conceptual frame to embrace its future."
+    },
+    {
+      "name": "vibrant_illustrations",
+      "description": "Meanwhile, vibrant illustrations serve as witty double entendres, conveying the intersection of Yerba Buena’s many dining, shopping and entertainment possibilities. We applied these visual cues to everything from major events to tee shirts, promotional co-branding, a neighborhood map, and the welcome banners that define the edges of neighborhood."
+    },
+    {
+      "name": "crown_jewel",
+      "description": "But the crown jewel of Yerba Buena’s online identity is a mesmerizing, interactive map showing traffic flowing through the neighborhood, simulated with code from real traffic patterns. Newcomers benefit from an orienting birds-eye view of the bustling street grid, along with an index that helps them make decisions about where to eat, shop, stay and be entertained."
+    },
+    {
+      "name": "flexible_brand_system",
+      "description": "With a flexible brand system, YBCBD has continued to extend the way visitors and neighbors experience Yerba Buena. The brand has been fully embraced by neighbors, local businesses and the city at large, leading to new investment and new points of interest."
+    }
+  ],
+  "website_module": [
+    {},
+    {}
+  ],
+  "interview": {
+    "questions": [
+      {
+        "question": "How did you get to the logo?",
+        "answer": "I think there were at least five of us working on it – it was such a cool project that everyone wanted to throw their hat in the ring. At the same time, though, it was a tough one. This isn’t like the typical logo project, where you’re symbolizing something more abstract, like the idea behind a business or service. Yerba Buena is a real place, with its own forms and spaces. And ultimately that’s where we ended up: the stacked type symbolizes the street grid, while the square is like Yerba Buena Gardens bursting out of the center."
+      },
+      {
+        "question": "Did you design the winning logo?",
+        "answer": "We don’t really work that way. At the beginning of a visual ID process, we start in our separate corners, but pretty quickly we start building off of each other’s ideas, and sharing the work of bringing the best ideas to fruition. Honestly, I couldn’t tell you whose logo this was to begin with. But I do know that we all brought something to the table to make it the winner."
+      }
+    ]
+  }
+}

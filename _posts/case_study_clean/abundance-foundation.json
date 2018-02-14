@@ -1,0 +1,14 @@
+{
+  "title": "Abundance Foundation",
+  "date": "2018-02-13T21:48:37.706Z",
+  "subtitle": "Abundance Foundation Blah Blah",
+  "services": "Branding",
+  "category": "Consulting",
+  "case_study_image_grid": [
+    {
+      "image_alt": "Abundance Foundation Logo",
+      "image": "/static/assets/dance.png",
+      "image_aspect_ratio": "1.5"
+    }
+  ]
+}
