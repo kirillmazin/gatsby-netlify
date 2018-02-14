@@ -1,0 +1,11 @@
+{
+  "title": "North Face",
+  "header": "North Face",
+  "hero_image": "/static/assets/animation_test.gif",
+  "subtitle": "Hello",
+  "interview": {
+    "image_alt": "kjjk",
+    "staff_name": "kjjk",
+    "interview_title": "kjjkj"
+  }
+}
