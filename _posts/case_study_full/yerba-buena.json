@@ -27,6 +27,15 @@
     {
       "name": "crown_jewel",
       "description": "But the crown jewel of Yerba Buena’s online identity is a mesmerizing, interactive map showing traffic flowing through the neighborhood, simulated with code from real traffic patterns. Newcomers benefit from an orienting birds-eye view of the bustling street grid, along with an index that helps them make decisions about where to eat, shop, stay and be entertained."
+    },
+    {
+      "name": "flexible_brand_system",
+      "description": "With a flexible brand system, YBCBD has continued to extend the way visitors and neighbors experience Yerba Buena. The brand has been fully embraced by neighbors, local businesses and the city at large, leading to new investment and new points of interest."
     }
+  ],
+  "website_module": [
+    {},
+    {},
+    {}
   ]
 }
