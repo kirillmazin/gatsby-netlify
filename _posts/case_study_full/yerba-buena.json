@@ -1,6 +1,6 @@
 {
   "title": "Yerba Buena",
-  "Header": "Yerba Buena Community Benefit District",
+  "header": "Defining a Sense of Place",
   "hero_image": "/static/assets/yerba-buena-hero-03.jpg",
   "subtitle": "Defining a Sense of Place",
   "paragraph": [
@@ -38,6 +38,7 @@
     {}
   ],
   "interview": {
+    "interview_photo": "/static/assets/interview-monica.png",
     "questions": [
       {
         "question": "How did you get to the logo?",
