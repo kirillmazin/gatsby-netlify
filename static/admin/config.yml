@@ -5,32 +5,107 @@ backend:
 media_folder: static/assets
 
 collections:
-  - label: "Blog"
+  - label: "Case Study Index"
     name: "blog"
-    folder: "_posts/blog"
+    folder: "_posts/case_study_index"
+    extension: json
+    format: json
     create: true
     fields:
-      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Case Study Index", name: "title", widget: "string"}
+      - label: "Case studies list"
+        name: "case_studies_list"
+        widget: "list"
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "relation"
+            collection: "case_study_clean"
+            searchFields: ["title","subtitle"]
+            valueField: "title"
+          - label: "Description"
+            name: "description"
+            widget: "relation"
+            collection: "case_study_clean"
+            searchFields: ["title","subtitle"]
+            valueField: "description"
+  - label: "Case Study"
+    name: "case_study_clean"
+    folder: "_posts/case_study"
+    extension: json
+    format: json
+    slug: {{slug}}
+    create: true
+    fields:
+      - {label: "Case study name", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Body", name: "body", widget: "markdown"}
-  - label: "Case study"
-    name: "case_study"
-    folder: "case_study"
-    create: true
-    fields:
-      - {label: "Case study name", name: "case_study_index", widget: "string"}
+      - {label: "Subtitle", name: "subtitle", widget: "string"}
+      - {label: "Services", name: "services", widget: "string"}
       - {label: "Category", name: "category", widget: "string"}
+      - {label: "Decription", name: "description", widget: "markdown"}
       - label: "Image grid"
         name: "case_study_image_grid"
         widget: "list"
         fields:
-            - {label: "Image alt", name: "image_alt", widget: "string"}
-            - {label: "Image", name: "image", widget: "image"}
-      - {label: "Service", name: "service", widget: "string"}
-  - label: "Case study list"
-    name: "case_study_list"
-    folder: "case_study_list"
+          - {label: "Image alt", name: "image_alt", widget: "string"}
+          - {label: "Image", name: "image", widget: "image"}
+          - {label: "Aspect ratio", name: "image_aspect_ratio", widget: "select", options:["2","1.5","1"]}
+  - label: "Case Study Full"
+    name: "case_study_full"
+    folder: "_posts/case_study_full"
+    extension: json
+    format: json
     create: true
     fields:
-      - {label: "Case study item", name: "case_study_item", widget: "relation", collection: "case_study", searchFields:["name"],valueField:"name"}
+      - {label: "Project name", name: "title", widget: "string"}
+      - {label: "Header", name: "header", widget: "string"}
+      - {label: "Hero image", name: "hero_image", widget: "image"}
+      - {label: "Subtitle", name: "subtitle", widget: "string"}
+      - label: "Large paragraphs"
+        name: "paragraph"
+        widget: "list"
+        required: false
+        fields:
+          - {label: "Name", name: "name", widget: "string"}
+          - {label: "Decription", name: "description", widget: "markdown"}
+      - label: "Image grid"
+        name: "image_grid"
+        widget: "list"
+        required: false
+        fields:
+          - label: "Grid images"
+            name: "grid_images"
+            widget: "list"
+            fields:
+                - {label: "Type", name: "type", widget: "select", options:["horizontal","vertical"]}
+                - {label: "Image alt", name: "image_alt", widget: "string"}
+                - {label: "Image", name: "image", widget: "image"}
+      - label: "Large images"
+        name: "large_image"
+        widget: "list"
+        required: false
+        fields:
+            - {label: "Image alt", name: "image_alt", widget: "string"}
+            - {label: "Image", name: "image", widget: "image"}
+      - label: "Website module"
+        name: "website_module"
+        widget: "list"
+        required: false
+        fields:
+            - {label: "Image alt", name: "image_alt", widget: "string"}
+            - {label: "Image", name: "image", widget: "image"}
+      - label: "Interview"
+        name: "interview"
+        widget: "object"
+        fields:
+            - {label: "Image alt", name: "image_alt", widget: "string"}
+            - {label: "Work sample", name: "interview_image", widget: "image"}
+            - {label: "Staff photo", name: "interview_photo", widget: "image"}
+            - {label: "Staff name", name: "staff_name", widget: "string"}
+            - {label: "Interview title", name: "interview_title", widget: "string"}
+            - label: "Questions"
+              name: "questions"
+              widget: list
+              fields:
+                  - {label: "Question", name: "question", widget: "string"}
+                  - {label: "Answer", name: "answer", widget: "markdown"}
